@@ -1,0 +1,45 @@
+li{
+    width: 50%;
+}
+
+.head_img{
+    height: 150px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+.nav-link {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+.nav-link{
+    font-size: larger;
+}
+
+#orders{
+    padding: 100px;
+}
+
+.list-group-item{
+    font-size: larger;
+}
+
+h2{
+    color: antiquewhite!important;
+    margin-left: 250px;
+}
+
+.form-control{
+    width: 50%;
+    margin-left: 25%;
+}
