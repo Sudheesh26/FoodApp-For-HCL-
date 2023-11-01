@@ -1,0 +1,88 @@
+/* Header */
+html { 
+    scroll-behavior: smooth;
+}
+#header{
+    height: 100px;
+    margin-bottom: 0;
+   
+}
+.head_img{
+    height: 100px;
+    margin-right: 0;
+}
+
+.navbar{
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.navbar-nav { 
+    margin-left: auto; 
+    
+} 
+
+.nav-link{
+    font-size: larger;
+    color: white;
+}
+
+.title{
+    color: white;
+}
+
+/* Home */
+
+#home{
+    margin:180px auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 100px;
+    background-color: grey;
+    height: 50px;
+    background-color: rgb(9, 130, 90);
+    color: antiquewhite;
+}
+
+.hcl_mdu{
+    border-radius: 60%;
+    width: 20rem;
+}
+
+.fa-circle-check{
+    size: 500px;
+}
+
+
+/* Shops */
+#shop h1{
+    margin-left: 160px;
+}
+
+#food h2,span{
+    margin-left: 70px;
+}
+
+/* Food */
+
+.food{
+    border: none;
+    margin-bottom: 50px;
+}
+
+/* Cart */
+#cartList{
+    background-color: lightgray;
+}
+
+/* Support */
+
+.form-control{
+    width: 50%;
+    margin-left: 25%;
+}
