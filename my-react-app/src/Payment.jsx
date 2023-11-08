@@ -14,7 +14,7 @@ const sendArr = async (cartData) => {
   console.log("sendArr function called");
   try {
 
-    const response = fetch('http://localhost:3003/api/saveCart', {
+    const response = fetch('https://food-app-backend-ro21.onrender.com/api/saveCart', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
