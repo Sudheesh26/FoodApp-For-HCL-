@@ -3,7 +3,7 @@ const season6 =
     {
         id: 1,
         title: 'Sambar Rice',
-        img:'../images/food-7.jpeg',
+        img:'../images/food-1.jpeg',
         text:'₹40',
         btn: 'Order your Food'
     },
