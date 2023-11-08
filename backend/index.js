@@ -1,8 +1,10 @@
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://0.0.0.0:27017/orderList', { useNewUrlParser: true, useUnifiedTopology: true });
 const express = require('express');
 const app = express();
-const port = 3003; // or any other port you prefer
+const port = process.env.PORT || 3003;
 const cors = require('cors');
 app.use(cors());
 
