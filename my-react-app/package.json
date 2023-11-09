@@ -22,6 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-both": "npm run start-python & npm start",
+    "start-python": "python src/generate_sales_data.py",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
