@@ -3,7 +3,7 @@ li{
 }
 
 .head_img{
-    height: 150px;
+    height: 5rem;
 }
 
 .navbar-brand{
@@ -19,6 +19,7 @@ li{
 .nav-link {
     display: flex;
     flex-direction: row;
+    color: antiquewhite;
   }
 
 
@@ -36,7 +37,7 @@ li{
 
 h2{
     color: antiquewhite!important;
-    margin-left: 250px;
+    margin-left: 30%;
 }
 
 .form-control{
