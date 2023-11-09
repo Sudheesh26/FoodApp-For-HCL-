@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <script src="https://kit.fontawesome.com/c301d92c0f.js" crossorigin="anonymous"></script>
   <title>Tasty Orders</title>
   <link rel="icon" href="images/title-img.svg" type="image/x-icon">
@@ -38,8 +38,8 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img class="head_img" src="images/tastebuds.png" alt="Logo" class="d-inline-block align-text-top">
-          <h2 class="text-center h2">Vendor Site</h2>
         </a>
+        <h2 class="text-center h2">Vendor Site</h2>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -79,7 +79,7 @@
     <% data.forEach(item => { %>
       <form action="/delete" method="post">
         <div class="item" style="display: flex; align-items: center;">
-          <li class="list-group-item mx-auto" style="width: 50%;">
+          <li class="list-group-item mx-auto" style="width: 75%;">
             <%= item.title %>
             <i class="fa-sharp fa-solid fa-arrow-right fa-fade"></i>
             <%= item.user %>
