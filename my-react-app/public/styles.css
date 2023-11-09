@@ -2,20 +2,41 @@
 html { 
     scroll-behavior: smooth;
 }
+
 #header{
     height: 100px;
     margin-bottom: 0;
-   
 }
+
 .head_img{
-    height: 100px;
+    height: 3.25rem;
     margin-right: 0;
+}
+
+.navbar-toggler {
+    border: none;
+    width: 50px;
+    background-color: transparent;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.fa-bars{
+    margin-left: 0;
 }
 
 .navbar{
     height: auto;
     width: 100%;
-    padding: 0;
+    /* padding: 0; */
+    padding: 10px;
 }
 
 .navbar-brand{
@@ -26,6 +47,9 @@ html {
     margin-left: auto; 
     
 } 
+.nav-item {
+    margin: 10px 0;
+}
 
 .nav-link{
     font-size: larger;
@@ -61,11 +85,11 @@ html {
 
 /* Shops */
 #shop h1{
-    margin-left: 160px;
+    margin-left: 5rem;
 }
 
 #food h2,span{
-    margin-left: 70px;
+    margin-left: 3rem;
 }
 
 /* Food */
