@@ -1,22 +1,42 @@
-/* Header */
+Header
 html { 
     scroll-behavior: smooth;
 }
+
+body{
+    font-family: 'Kanit', sans-serif;
+    /* background: linear-gradient(90deg, rgba(255, 150, 50, 0.8) 10%,  rgba(200, 100, 50, 0.6) 50%); */
+    background: #0f0c29;
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+color: white;
+}
+
+::selection {
+    color: #ffd700;
+    }
+
 
 #header{
     height: 100px;
     margin-bottom: 0;
 }
+#header {
+    z-index: 1000; 
+  }
+  
 
 .head_img{
     height: 3.25rem;
     margin-right: 0;
 }
 
+
 .navbar-toggler {
     border: none;
     width: 50px;
     background-color: transparent;
+    color: white;
 }
 
 .navbar-toggler:focus {
@@ -37,6 +57,7 @@ html {
     width: 100%;
     /* padding: 0; */
     padding: 10px;
+    position: fixed;
 }
 
 .navbar-brand{
@@ -56,6 +77,10 @@ html {
     color: white;
 }
 
+.navbar-nav .nav-link:hover{
+    color: #ffd700;
+}
+
 .title{
     color: white;
 }
@@ -67,10 +92,7 @@ html {
     margin-top: 0;
     margin-bottom: 30px;
     padding: 100px;
-    background-color: grey;
     height: 50px;
-    background-color: rgb(9, 130, 90);
-    color: antiquewhite;
 }
 
 .hcl_mdu{
@@ -102,6 +124,8 @@ html {
 /* Cart */
 #cartList{
     background-color: lightgray;
+    padding: 15px;
+
 }
 
 /* Support */
@@ -110,3 +134,37 @@ html {
     width: 50%;
     margin-left: 25%;
 }
+
+#support{
+    color: #000;
+}
+
+.cart_head::selection{
+    background-color: grey;
+    color: white;
+}
+
+#support ::selection{
+    background-color: grey;
+    color: white;
+}
+#support .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+hr
+{
+    width: 5%;
+    border-style: dotted;
+    border-bottom: 0;
+    border-width: 10px;
+    color:white;
+    margin: 6.25rem auto;
+}
+
+/* Success Icon */
+.fa-circle-check{
+    color: greenyellow;
+}
+
