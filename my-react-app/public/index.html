@@ -8,6 +8,10 @@
   <script src="https://kit.fontawesome.com/c301d92c0f.js" crossorigin="anonymous"></script>
   <title>TasteBuds</title>
   <link rel="icon" href="images/title-img.svg" type="image/x-icon">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- BootStrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -20,19 +24,19 @@
   <script src="https://apis.google.com/js/api.js"></script>
   <script src="https://apis.google.com/js/client.js"></script>
 
+  
+
 
   <link rel="stylesheet" href="styles.css">
 
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-
 
 </head>
 <body>
 
   <!-- ********* Header Starts ********* -->
   <div id="header" class="">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light"
-      style="background: linear-gradient(90deg, rgba(95,30,190,1) 10%, rgba(60,145,255,1) 50%);">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background: linear-gradient(to right, #24243e, #302b63, #0f0c29);">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           
@@ -80,7 +84,7 @@
 
   <!-- ********* Home Starts *********  -->
 
-  <div id="home" class="h1 my-5" style="background-color: white; padding: 30px; color: black;"></div>
+  <div id="home" class="h1"></div>
 
 
   <!-- ********* Home Ends ********* -->
@@ -101,6 +105,8 @@
     </div>
 
   </div>
+
+  <hr>
   <!-- ********* Shop Ends ********* -->
 
   <!-- ********* Foods Start ********* -->
@@ -137,12 +143,13 @@
     </div>
 
   </div>
+  
   <!-- ********* Foods End ********* -->
 
 
   <!-- ********* Cart Start ********* -->
   <div id="cartList" class="container-fluid text-center">
-    <h3 class="3">Your Cart</h3>
+    <h3 class="text-dark cart_head">Your Cart</h3>
     <div id="cart">
     </div>
     <form action="" id="order_btn"></form>
