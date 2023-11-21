@@ -21,7 +21,7 @@ let orderResult = function (arr) {
     for (const item of arr) {
         const textValue = parseFloat(item.text.replace('₹', ''));
 
-        total += textValue;
+        total += (item.quantity)*textValue;
     }
     totalResult = total;
     return total;
@@ -38,12 +38,22 @@ function CardComponent(props) {
             text: props.text,
             menu: props.menu,
             btn: props.btn,
-            user : username
+            user : username,
+            quantity: 1 
         };
 
+        const existingItemIndex = cart.findIndex(item => (
+            item.title === itemToAdd.title && item.user === itemToAdd.user
+        ));
+
         if(props.btn == 'Order your Food'){
-            console.log(cart);
-            cart.push(itemToAdd);
+            if (existingItemIndex !== -1) {
+                cart[existingItemIndex].quantity += 1;
+    
+                console.log(cart[existingItemIndex].quantity);
+            } else {
+                cart.push(itemToAdd);
+            }
         }
         
         console.log(cart);
@@ -58,12 +68,21 @@ function CardComponent(props) {
     }
 
     return (
-        <Card style={{ width: '18rem', textAlign: 'center' }}>
+        <Card className='card_select' style={{ width: '18rem', textAlign: 'center', margin:'15px'}}>
             <Card.Img style={{ height: '12.5rem' }} variant="top" src={props.img} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.text}</Card.Text>
                 <Button onClick={addToCart} href={'#' + props.menu} variant="primary">{props.btn}</Button>
+
+                {cart.map(item => (
+                    item.title === props.title && item.user === username && (
+                        <div key={item.title + item.user}>
+                            <p>Quantity: {item.quantity}</p>
+                        </div>
+                    )
+                ))}
+                
             </Card.Body>
         </Card>
     )
