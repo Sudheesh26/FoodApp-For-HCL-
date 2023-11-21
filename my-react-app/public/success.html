@@ -32,12 +32,12 @@
   <!-- ********* Header Starts ********* -->
   <div id="header" class="">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light"
-      style="background: linear-gradient(90deg, rgb(57, 122, 4) 10%, rgb(13, 204, 112) 50%);">
+      style="background: linear-gradient(to right, #24243e, #302b63, #0f0c29);">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img href="#home" src="images/tastebuds.png" alt="Logo" class="head_img d-inline-block align-text-top">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,7 +59,7 @@
               <a class="nav-link" href="localhost:3000/#support">Support</a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
       </div>
 
@@ -69,7 +69,7 @@
   </div>
 
   <div id="home" class="text-center">
-    <h3 class="display-3">Transaction Successful !!</h3>
+    <h3 class="display-3" style="color:rgb(100, 244, 100)">Transaction Successful !!</h3>
     
   </div>
 
@@ -80,31 +80,25 @@
     </div>
   </div>
 
-<script>
-  function getQueryParams() {
-      const queryParams = new URLSearchParams(window.location.search);
-      const params = {};
-      for (const [key, value] of queryParams.entries()) {
-          params[key] = value;
-      }
-      return params;
-  }
+  <script>
 
-  const transactionDetails = getQueryParams();
+    const queryParams = new URLSearchParams(window.location.search);
+    const paymentId = queryParams.get('paymentId');
 
-  const transactionDetailsDiv = document.querySelector("#transactionDetails");
+    console.log("Payment ID : " + paymentId);
+    const transactionDetailsDiv = document.querySelector("#transactionDetails");
 
-  const paymentIdParagraph = document.createElement("p");
-  paymentIdParagraph.textContent = "Payment ID: " + transactionDetails.razorpay_payment_id;
-  transactionDetailsDiv.appendChild(paymentIdParagraph);
+    const paymentIdParagraph = document.createElement("p");
+    paymentIdParagraph.textContent = "Payment ID: " + paymentId;
+    transactionDetailsDiv.appendChild(paymentIdParagraph);
 
-  const orderIdParagraph = document.createElement("p");
-  
-  const orderDateTimeParagraph = document.createElement("p");
-  const orderDateTime = new Date();
-  orderDateTimeParagraph.textContent = "Order Date and Time: " + orderDateTime.toLocaleString();
-  transactionDetailsDiv.appendChild(orderDateTimeParagraph);
-</script>
+    const orderIdParagraph = document.createElement("p");
+
+    const orderDateTimeParagraph = document.createElement("p");
+    const orderDateTime = new Date();
+    orderDateTimeParagraph.textContent = "Order Date and Time: " + orderDateTime.toLocaleString();
+    transactionDetailsDiv.appendChild(orderDateTimeParagraph);
+  </script>
 
 
 </body>
